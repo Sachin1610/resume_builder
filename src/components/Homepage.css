@@ -1,0 +1,205 @@
+.homepage-container {
+  display: flex;
+  background: #5433ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom right,
+    #a5fecb,
+    #20bdff,
+    #5433ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.homepage-container .text-content {
+  display: flex;
+  width: 60%;
+  min-height: 100vh;
+}
+
+.text-content .text-main-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 3rem;
+  margin-left: 4rem;
+  border-radius: 20px;
+  background-color: #effffd;
+}
+
+.text-main-container h1,
+.text-main-container p {
+  margin: 0;
+}
+
+.text-main-container h1 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-main-container p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#create-resume-btn {
+  align-self: center;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  margin-top: 0.5rem;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 1rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform;
+}
+
+#create-resume-btn:disabled {
+  pointer-events: none;
+}
+
+#create-resume-btn:hover {
+  color: #fff;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#create-resume-btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.homepage-container .graphics {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  min-height: 100vh;
+}
+
+.homepage-container .graphics img {
+  align-self: center;
+}
+
+@media screen and (max-width: 1152px) {
+  .text-main-container h1 {
+    font-size: 2.5rem;
+  }
+  .text-main-container p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 838px) {
+  #create-resume-btn {
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .text-content .text-main-container {
+    padding: 2rem;
+  }
+  .text-main-container h1 {
+    font-size: 2rem;
+  }
+  .text-main-container p {
+    font-size: 1rem;
+  }
+  #create-resume-btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .text-main-container h1 {
+    font-size: 1.75rem;
+  }
+  .homepage-container {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .homepage-container .text-content {
+    width: 80%;
+    min-height: auto;
+  }
+  .homepage-container .graphics {
+    width: 80%;
+    min-height: auto;
+  }
+  .homepage-container .graphics img {
+    height: 60%;
+    width: 60%;
+  }
+  .text-content .text-main-container {
+    margin: 0;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 402px) {
+  .text-main-container h1 {
+    font-size: 1.6rem;
+  }
+  #create-resume-btn {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1518px) {
+  .text-main-container h1 {
+    font-size: 3.25rem;
+  }
+  .text-main-container p {
+    font-size: 1.4rem;
+  }
+  #create-resume-btn {
+    font-size: 1.25rem;
+  }
+  .homepage-container .graphics img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .text-main-container h1 {
+    font-size: 3.5rem;
+  }
+  .text-main-container p {
+    font-size: 1.6rem;
+  }
+  #create-resume-btn {
+    font-size: 1.4rem;
+  }
+  .homepage-container .graphics img {
+    width: 60%;
+  }
+}
