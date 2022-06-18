@@ -1,4 +1,4 @@
-# Fast Resume Builder
+# Resume Builder
 
 A React Web Application which helps you build your resume by just following the different steps and simply entering your data.
 
