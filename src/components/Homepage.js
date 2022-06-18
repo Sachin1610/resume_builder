@@ -7,7 +7,7 @@ const Homepage = (props) => {
     <div className="homepage-container">
       <div className="text-content">
         <div className="text-main-container">
-          <h1>ResFast Resume Builder</h1>
+          <h1> Resume Builder</h1>
           <p>
             Don't want to go through the dreary process of building your resume
             from scratch? We've got you covered.
